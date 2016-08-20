@@ -162,6 +162,28 @@
     </div>
 </div>
 <div class="form-group">
+    <label class="control-label col-sm-2">{{ 'label.input.downpayment' | translate }}
+        <i class="icon-question-sign" tooltip="{{'label.tooltip.loanproduct.downpayment' | translate}}"
+           tooltip-append-to-body="true"></i>
+    </label>
+
+    <div class="col-sm-2">
+        <input id="minDownpayment" placeholder="{{'label.input.minimum' | translate}}" type="text"
+               class="form-control" number-format ng-model="formData.minDownpayment">
+    </div>
+    <div class="col-sm-2">
+        <input type="text" placeholder="{{'label.input.default' | translate}}" id="downpayment" name="downpayment"
+               class="form-control" number-format ng-model="formData.downpayment" required late-validate/>
+    </div>
+    <div class="col-sm-2">
+        <input type="text" placeholder="{{'label.input.maximum' | translate}}" id="maxDownpayment"
+               class="form-control" number-format ng-model="formData.maxDownpayment">
+    </div>
+    <div class="col-sm-2">
+        <form-validate valattributeform="createloanproductform" valattribute="downpayment"/>
+    </div>
+</div>
+<div class="form-group">
     <label class="control-label col-sm-2">{{ 'label.input.principal' | translate }}
         <i class="icon-question-sign" tooltip="{{'label.tooltip.loanproduct.principal' | translate}}"
            tooltip-append-to-body="true"></i>
@@ -234,6 +256,8 @@
         </table>
     </div>
 </div>
+
+
 <div class="form-group">
     <label class="control-label col-sm-2">{{ 'label.input.numofrepayments' | translate }}
         <i class="icon-question-sign" tooltip="{{'label.tooltip.loanproduct.numofrepayments' | translate}}"
