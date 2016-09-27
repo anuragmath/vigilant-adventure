@@ -601,7 +601,7 @@
     "label.input.selectclientimage": "Select client image",
     "label.input.selectfile": "Select file",
     "label.input.documenttype": "Document type",
-    "label.input.documenttype": "Status",
+    "label.input.status": "Status",
     "label.input.uniqueidentification": "Unique ID #",
     "label.input.mobilenumber": "Mobile number",
     "label.input.client.activationdate": "Activation date",
